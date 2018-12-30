@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html  ng-app="Assignapp">
+  <head>
+    <meta charset="utf-8">
+
+
+    <script src="angular.min.js"></script>
+    <script src="Assignmentapp.js"></script>
+
+
+    <style media="screen">
+    body{
+      background-image:url("food3.jpg");
+      color:"white";
+    }
+    #newClass{
+      font-size: 30px;
+      font-family: sans-serif;
+      border: 2px solid black;
+      width:600px;
+    }
+    </style>
+
+
+    <title>My First Assignment</title>
+  </head>
+
+    <body>
+      <h1  align="center" font-size=40px><u>EATING CALCULATOR</u></h1>
+    <div align="center" ng-controller="EatController">
+      <div id="newClass">ENTER FOODITEMS U EAT IN ONE SITTING:</div>
+      <p><p>
+      <input type="text" ng-model="foodName"><br>
+
+        <div id="newClass">{{message}}</div><p>
+
+      <button name="button" ng-click="checkFood()">Check if Too Much</button>
+      </div>
+  </body>
+
+
+</html>
